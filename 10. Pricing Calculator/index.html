@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <title>Pricing Calculator</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="box">
+          <h2>How do pie cost?</h2>
+          <form>
+            <div class="field">
+              <label class="label" for="price">Price</label>
+              <div class="control">
+                <input type="text" class="input" name="price" value="30" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="quantity">
+                Quantity
+                <span class="icon has-background-warning"></span>
+              </label>
+              <div class="control">
+                <input
+                  type="range"
+                  class="input"
+                  name="quantity"
+                  value="1"
+                  min="1"
+                  max="10"
+                  step="1"
+                />
+              </div>
+            </div>
+          </form>
+          <div
+            class="is-size-1 has-text-right has-text-weight-semidbold mt-3 total"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
