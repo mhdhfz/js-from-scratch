@@ -1,0 +1,22 @@
+body {
+  padding: 30px;
+  background-color: #efefef;
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 50px;
+  font-size: 19px;
+  line-height: 1.5;
+  min-height: 3000px;
+}
+
+.scroll-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8px;
+  background: #1ce;
+  z-index: 1;
+  transition: 0.5 cubic-bezier(0.075, 0.82, 0.165, 1) width;
+}
