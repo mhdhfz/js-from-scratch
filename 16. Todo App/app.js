@@ -60,7 +60,16 @@ function deleteTodolist(e) {
   }
 }
 // function to edit and update todolist to localstorage
+function editTodolist(e) {
+  if (!e.target.matches(".edit")) {
+    return;
+  } else {
+    const editContent = e.target.parentNode;
+    editContent.setAttribute("contenteditable", "true");
+  }
+}
 
 // event listener
 form.addEventListener("submit", addTodoList);
 listTodos.addEventListener("click", deleteTodolist);
+listTodos.addEventListener("click", editTodolist);
